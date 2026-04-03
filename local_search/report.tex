@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{array}
+
+\geometry{a4paper, margin=1in}
+
+\title{AI Assignment 2}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 1 (b)}
+
+\subsection{Summary Table (Global Maximum = State 11)}
+
+From the results:
+
+\begin{itemize}
+    \item First-Choice Hill Climbing reaches state 11 from: 11, 12 $\Rightarrow$ 2 states
+    \item Stochastic Hill Climbing reaches state 11 from: 10, 11, 12 $\Rightarrow$ 3 states
+\end{itemize}
+
+\subsection{Comparison Table}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Algorithm} & \textbf{\# of Starting States Reaching State 11} \\
+\hline
+First-Choice & 2 \\
+\hline
+Stochastic & 3 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Starting States Where Results Differ}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Start} & \textbf{First-Choice Terminal} & \textbf{Stochastic Terminal} \\
+\hline
+3 & 2 & 4 \\
+\hline
+8 & 6 & 9 \\
+\hline
+10 & 9 & 11 \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
